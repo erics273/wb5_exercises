@@ -48,10 +48,14 @@ let theBobs = academyMembers.filter( (member) => {
 
 console.log(theBobs)
 
+//find all the actors who have films that start with the letter A
+//loop over all the actors in the academyMembers array using filter.
 let theAfilms = academyMembers.filter( (member) => {
 
+    //looping over all the films for each actor (member)
     for(let i = 0; i< member.films.length; i++){
 
+        //do any of the films start with A
         if(member.films[i].indexOf("A") === 0){
             return true
         }
@@ -61,4 +65,5 @@ let theAfilms = academyMembers.filter( (member) => {
     }
 } )
 
+//display the members that have a film starting with A
 console.log(theAfilms);
